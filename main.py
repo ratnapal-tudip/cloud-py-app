@@ -34,3 +34,6 @@ def get_users():
 
     return users
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
